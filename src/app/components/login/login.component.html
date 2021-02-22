@@ -1,0 +1,49 @@
+<div style="height: 100vh;" class="row ">
+  <div class="col-lg-5 col-xs-12 w-75 main-form">
+    <form autocomplete="off" #formData="ngForm" (ngSubmit)="onSubmit(formData)">
+ <div class="w-75 inputs">
+<div>
+  <h1>Login</h1>
+  <p>Login to get access to your CRM</p>
+</div>
+  <div class="form-group">
+    <label class="input-title" for="email"> <i class="far fa-envelope "></i> Email address</label>
+    <input #_email="ngModel"
+      [(ngModel)]="email"
+      [ngClass]="{'is-invalid': _email.errors && _email.touched}"
+      name="email" type="email" class="form-control" id="email" required email>
+      <div  class="invalid-feedback" [hidden]="!_email.errors?.required">
+        Please enter email
+      </div>
+      <div  class="invalid-feedback" [hidden]="!_email.errors?.email">
+        Please enter a valid email adress
+      </div>
+  </div>
+  <div class="form-group">
+    <label class="input-title" for="password"><i class="fas fa-unlock-alt"></i> Password</label>
+    <input  
+    #_password="ngModel" 
+    [(ngModel)]="password" 
+    [ngClass]="{'is-invalid':_password.errors?.required && _password.touched}"
+     name="password" type="password" class="form-control input-title" id="password"  required >
+    <div [hidden]="!_password.errors?.required" class="invalid-feedback">
+      Please enter password
+    </div>
+  </div>
+<div class="text-center">
+  <button [disabled]="!formData.valid" name="submit" type="submit" name="submit" class="btn btn-primary">Submit</button>
+</div>
+  <div *ngIf="error" class="msg mt-3 text-danger "> {{ errorMessage }}</div>
+ </div>
+    </form>
+
+  </div>
+  <div class="col-lg-7 d-none d-lg-block
+  t-4 mx-auto img">
+<div class="main-title">
+  <h1>Easy CRM</h1>
+  <p>Manege all your employees in one place</p>
+</div>
+
+  </div>
+</div>

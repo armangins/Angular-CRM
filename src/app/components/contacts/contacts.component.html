@@ -1,0 +1,43 @@
+<div class="row table-row">
+  <div class="col-12">
+  <app-page-title [page_icon]="page_icon" [page_title]="page_title"></app-page-title>
+  <div class="row d-flex flex-row-reverse">
+    <!-- <div class="col-lg-2 ">
+      <a href="" routerLink="/employees/new-employee" class="btn btn-primary mb-2">New Contact <i
+          class="fas fa-plus"></i></a>
+    </div> -->
+  </div>
+<div class="row">
+  <div class="col-lg-12">
+    <table *ngIf="contacts.length>0; else noContacts" class="table ">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FIrst Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Phone <fa-icon [icon]="contactsIcon"></fa-icon>
+          </th>
+          <th scope="col">Address <fa-icon [icon]="locationIcon"></fa-icon>
+          </th>
+          <th scope="col">Role <fa-icon [icon]="roleIcon"></fa-icon>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contacts let i=index">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{ contact.first_name }}</td>
+          <td>{{ contact.last_name}}</td>
+          <td>{{ contact.phones }}</td>
+          <td>{{ contact.address }}</td>
+          <td>{{ contact.role }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #noContacts>
+        <h3>Contacts list is not avaibleat at this moment</h3>
+    </ng-template>
+  </div>
+</div>
+  </div>
+</div>

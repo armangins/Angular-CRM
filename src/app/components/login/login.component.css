@@ -1,0 +1,40 @@
+.main-form {
+  margin-top: 30vh;
+}
+
+.row {
+  padding: 0rem;
+  margin: 0rem !important;
+}
+
+.img {
+  background-image: url(../../../assets/images/person-writing-on-notebook-669615.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-title {
+  color: whitesmoke;
+  background-color: black;
+  opacity: 0.8;
+  padding: 5rem 0rem;
+  margin-top: 40vh;
+  text-align: center;
+}
+
+.input-title {
+
+  font-size: 1.2rem;
+  font-weight: 500 normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .inputs{
+        width: 100% !important;
+    }
+    .main-form {
+        margin-top: 30vh;
+        width: 100% !important;
+      }
+
+  }

@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-12">
+    <app-page-title [page_icon]="page_icon" [page_title]="page_title">
+    </app-page-title>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-10">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+      </div>
+      <input name="firstName" [(ngModel)]="firstName" (keyup)="onSearch('firstName')" type="text" class="form-control" placeholder="Search by name" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="col-lg-2 ">
+    <a href="" routerLink="/employees/new-employee" class="btn btn-primary mb-2">New Employee <i
+        class="fas fa-plus"></i></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+
+          <th scope="col">Actions</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Positions</th>
+          <th scope="col">Status</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr (mouseenter)="showTools($event)" (mouseleave)="hideTools($event)"
+          *ngFor="let employee of employees let i=index">
+          <td style="width:15rem  !important;"  class="">
+            {{ i+1 }}
+            <span class="invisible " >
+              <a class="text-secondary text icon" href="" routerLink="/employee/{{ employee.id }}"> <i
+                  style="color: rgb(6, 209, 125) !important;" class="fas fa-info"></i></a>
+              <a class="text-secondary icon   " href="" routerLink="/employee/edit/{{ employee.id }}"><i style="color: rgb(6, 145, 209) !important;"
+                  class="fas fa-user-edit "></i></a>
+              <a (click)="onDelete(employee.id,$event)" class="text-secondary icon" href=""><i style="color: rgb(200, 47, 9) !important;"
+                  class="far fa-trash-alt"></i></a>
+            </span>
+          </td>
+          <td>{{ employee.firstName | titlecase }}</td>
+          <td>{{ employee.lastName | titlecase }}</td>
+          <td>{{ employee.position | titlecase }}</td>
+          <td>
+            {{ employee.status | titlecase }}
+            <span style="color: rgb(0, 187, 72);" *ngIf="employee.status == 'employeed' else: fired">
+              <i class="fas fa-check"></i>
+            </span>
+            <ng-template #fired>
+              <span style="color: rgb(230, 6, 6)">
+              <i class="fas fa-times"></i>
+              </span>
+            </ng-template>
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

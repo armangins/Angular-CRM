@@ -1,0 +1,46 @@
+[
+  {
+    "first_name": "Lior",
+    "last_name": "Rozman",
+    "email": "lior@gmail.com",
+    "phones": [
+      "036656575",
+      "0529987654"
+    ],
+   "address": "Alenb 40 Tel-Aviv",
+   "role": "bussiness consultant"
+  },
+  {
+    "first_name": "Ronnie",
+    "last_name": "Michayev",
+    "email": "Ronnie@gmail.com",
+    "phones": [
+      "0388996875",
+      "05291237654"
+    ],
+   "address": "Melacha 7 Tel-Aviv",
+   "role": "IT maneger"
+  },
+  {
+    "first_name": "Daniel",
+    "last_name": "Polak",
+    "email": "Daniel@gmail.com",
+    "phones": [
+      "032212875",
+      "05245567654"
+    ],
+   "address": "Shabazi 10 Qiryat-Ekron",
+   "role": "Chief Security Officer"
+  },
+  {
+    "first_name": "Aviv",
+    "last_name": "Cohen",
+    "email": "Avivo@gmail.com",
+    "phones": [
+      "036653875",
+      "05298653654"
+    ],
+   "address": "Shitrit 4 Petah-Tikva",
+   "role": "DevTeam Leader"
+  }
+]
