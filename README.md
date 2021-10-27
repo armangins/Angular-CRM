@@ -1,7 +1,12 @@
 # CRM
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| ![CRM](https://user-images.githubusercontent.com/79071391/139135258-2330eebd-be35-4e74-a3cd-13a77c3930b5.PNG)  | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
 
-![CRM](https://user-images.githubusercontent.com/79071391/139135258-2330eebd-be35-4e74-a3cd-13a77c3930b5.PNG)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
