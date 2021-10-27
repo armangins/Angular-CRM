@@ -1,10 +1,10 @@
 # CRM
 
 
+
+| ![CRM](https://user-images.githubusercontent.com/79071391/139135258-2330eebd-be35-4e74-a3cd-13a77c3930b5.PNG)      |![crm-2](https://user-images.githubusercontent.com/79071391/139136681-b3f6693b-bd6a-47a5-be82-5df90e577a5c.PNG) |
 | Tables        | Are           | 
 | ------------- |:-------------:|
-| ![CRM](https://user-images.githubusercontent.com/79071391/139135258-2330eebd-be35-4e74-a3cd-13a77c3930b5.PNG)      |![crm-2](https://user-images.githubusercontent.com/79071391/139136681-b3f6693b-bd6a-47a5-be82-5df90e577a5c.PNG) |
-
 
 
 
