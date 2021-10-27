@@ -1,6 +1,6 @@
 # CRM
 
-| Login ||Dashboard | 
+| Login |Dashboard | 
 | ------------- |:-------------:| 
 
 | ![CRM](https://user-images.githubusercontent.com/79071391/139135258-2330eebd-be35-4e74-a3cd-13a77c3930b5.PNG)  | 
